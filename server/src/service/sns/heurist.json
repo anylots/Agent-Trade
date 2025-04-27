@@ -1,0 +1,267 @@
+[
+  {
+    "Agent ID": "AaveAgent",
+    "Description": "This agent can report the status of Aave v3 protocols deployed on Ethereum, Polygon, Avalanche, and Arbitrum with details on liquidity, borrowing rates, and more",
+    "Available Tools": ["get_aave_reserves"],
+    "Source Code": "Source",
+    "External APIs": "Aave"
+  },
+  {
+    "Agent ID": "AlloraPricePredictionAgent",
+    "Description": "This agent can predict the price of ETH/BTC with confidence intervals using Allora price prediction API",
+    "Available Tools": ["get_allora_prediction"],
+    "Source Code": "Source",
+    "External APIs": "Allora"
+  },
+  {
+    "Agent ID": "BitquerySolanaTokenInfoAgent",
+    "Description": "This agent provides comprehensive analysis of Solana tokens using Bitquery API. It can analyze token metrics (volume, price, liquidity), track holders and buyers, monitor trading activity, and identify trending tokens. The agent supports both specific token analysis and market-wide trend discovery.",
+    "Available Tools": [
+      "query_token_metrics",
+      "query_token_holders",
+      "query_token_buyers",
+      "query_top_traders",
+      "query_holder_status",
+      "get_top_trending_tokens"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Bitquery"
+  },
+  {
+    "Agent ID": "CarvOnchainDataAgent",
+    "Description": "This agent can query blockchain metrics of Ethereum, Base, Bitcoin, or Solana using natural language through the CARV API.",
+    "Available Tools": ["query_onchain_data"],
+    "Source Code": "Source",
+    "External APIs": "CARV"
+  },
+  {
+    "Agent ID": "CoinGeckoTokenInfoAgent",
+    "Description": "(recommend) This agent can fetch token information, market data, trending coins, and category data from CoinGecko.",
+    "Available Tools": [
+      "get_token_info",
+      "get_trending_coins",
+      "get_token_price_multi",
+      "get_categories_list",
+      "get_category_data",
+      "get_tokens_by_category"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Coingecko"
+  },
+  {
+    "Agent ID": "CookieProjectInfoAgent",
+    "Description": "This agent provides information about crypto projects using Cookie API, including project details by Twitter username and contract address.",
+    "Available Tools": [
+      "get_project_by_twitter_username",
+      "get_project_by_contract_address"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Cookie API"
+  },
+  {
+    "Agent ID": "DeepResearchAgent",
+    "Description": "Advanced research agent that performs multi-level web searches with recursive exploration, analyzes content across sources, and produces comprehensive research reports with key insights",
+    "Available Tools": ["deep_research"],
+    "Source Code": "Source",
+    "External APIs": "Firecrawl"
+  },
+  {
+    "Agent ID": "DexScreenerTokenInfoAgent",
+    "Description": "This agent fetches real-time DEX trading data and token information across multiple chains using DexScreener API",
+    "Available Tools": [
+      "search_pairs",
+      "get_specific_pair_info",
+      "get_token_pairs"
+    ],
+    "Source Code": "Source",
+    "External APIs": "DexScreener"
+  },
+  {
+    "Agent ID": "DuckDuckGoSearchAgent",
+    "Description": "This agent can fetch and analyze web search results using DuckDuckGo API and provide intelligent summaries.",
+    "Available Tools": ["search_web"],
+    "Source Code": "Source",
+    "External APIs": "DuckDuckGo"
+  },
+  {
+    "Agent ID": "ElfaTwitterIntelligenceAgent",
+    "Description": "(recommend) This agent analyzes a token or a topic or a Twitter account using Twitter data and Elfa API. It highlights smart influencers.",
+    "Available Tools": [
+      "search_mentions",
+      "search_account",
+      "get_trending_tokens"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Elfa"
+  },
+  {
+    "Agent ID": "ExaSearchAgent",
+    "Description": "This agent can search the web using Exa's API and provide direct answers to questions.",
+    "Available Tools": [
+      "exa_web_search",
+      "exa_answer_question"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Exa"
+  },
+  {
+    "Agent ID": "FirecrawlSearchAgent",
+    "Description": "Advanced search agent that uses Firecrawl to perform research with intelligent query generation and content analysis.",
+    "Available Tools": [
+      "firecrawl_web_search",
+      "firecrawl_extract_web_data"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Firecrawl"
+  },
+  {
+    "Agent ID": "FundingRateAgent",
+    "Description": "This agent can fetch funding rate data and identify arbitrage opportunities across cryptocurrency exchanges.",
+    "Available Tools": [
+      "get_all_funding_rates",
+      "get_symbol_funding_rates",
+      "find_cross_exchange_opportunities",
+      "find_spot_futures_opportunities"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Coinsider"
+  },
+  {
+    "Agent ID": "GoplusAnalysisAgent",
+    "Description": "This agent can fetch and analyze security details of blockchain token contracts using GoPlus API.",
+    "Available Tools": ["fetch_security_details"],
+    "Source Code": "Source",
+    "External APIs": "GoPlus"
+  },
+  {
+    "Agent ID": "MasaTwitterSearchAgent",
+    "Description": "This agent can search on Twitter through Masa API and analyze the results by identifying trending topics and sentiment related to a topic.",
+    "Available Tools": ["search_twitter"],
+    "Source Code": "Source",
+    "External APIs": "Masa"
+  },
+  {
+    "Agent ID": "MetaSleuthSolTokenWalletClusterAgent",
+    "Description": "This agent can analyze the wallet clusters holding a specific Solana token, and identify top holder behavior, concentration, and potential market manipulation.",
+    "Available Tools": [
+      "fetch_token_clusters",
+      "fetch_cluster_details"
+    ],
+    "Source Code": "Source",
+    "External APIs": "MetaSleuth"
+  },
+  {
+    "Agent ID": "MindAiKolAgent",
+    "Description": "This agent analyzes Key Opinion Leaders (KOLs) and token performance in the crypto space using Mind AI API.",
+    "Available Tools": [
+      "get_best_initial_calls",
+      "get_kol_statistics",
+      "get_token_statistics",
+      "get_top_gainers"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Mind AI"
+  },
+  {
+    "Agent ID": "MoniTwitterInsightAgent",
+    "Description": "This agent analyzes Twitter accounts providing insights on smart followers, mentions, and account activity.",
+    "Available Tools": [
+      "get_smart_followers_history",
+      "get_smart_followers_categories",
+      "get_smart_mentions_feed"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Moni"
+  },
+  {
+    "Agent ID": "PumpFunTokenAgent",
+    "Description": "This agent analyzes Pump.fun token on Solana using Bitquery API. It tracks token creation and graduation events on Pump.fun.",
+    "Available Tools": [
+      "query_recent_token_creation",
+      "query_latest_graduated_tokens"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Bitquery"
+  },
+  {
+    "Agent ID": "SolWalletAgent",
+    "Description": "This agent can query Solana wallet assets and recent swap transactions using Helius API.",
+    "Available Tools": [
+      "get_wallet_assets",
+      "analyze_common_holdings_of_top_holders",
+      "get_tx_history"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Helius"
+  },
+  {
+    "Agent ID": "SpaceTimeAgent",
+    "Description": "This agent can analyze blockchain data by executing SQL queries from natural language using Space and Time, a database with ZK proofs.",
+    "Available Tools": ["generate_and_execute_sql"],
+    "Source Code": "Source",
+    "External APIs": "Space and Time"
+  },
+  {
+    "Agent ID": "TokenMetricsAgent",
+    "Description": "This agent provides market insights, sentiment analysis, and resistance/support data for cryptocurrencies using TokenMetrics API.",
+    "Available Tools": [
+      "get_sentiments",
+      "get_resistance_support_levels"
+    ],
+    "Source Code": "Source",
+    "External APIs": "TokenMetrics"
+  },
+  {
+    "Agent ID": "TruthSocialAgent",
+    "Description": "This agent can retrieve and analyze posts from Donald Trump on Truth Social.",
+    "Available Tools": ["get_trump_posts"],
+    "Source Code": "Source",
+    "External APIs": "Apify"
+  },
+  {
+    "Agent ID": "TwitterInfoAgent",
+    "Description": "(recommend) This agent fetches a Twitter user's profile information and recent tweets. It's useful for getting project updates or tracking key opinion leaders (KOLs) in the space.",
+    "Available Tools": [
+      "get_user_tweets",
+      "get_twitter_detail",
+      "get_general_search"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Twitter API"
+  },
+  {
+    "Agent ID": "UnifWeb3NewsAgent",
+    "Description": "This agent fetches the latest Web3 and cryptocurrency news using UnifAI's API",
+    "Available Tools": ["get_web3_news"],
+    "Source Code": "Source",
+    "External APIs": "UnifAI"
+  },
+  {
+    "Agent ID": "UnifaiTokenAnalysisAgent",
+    "Description": "This agent provides token analysis using UnifAI's API, including GMGN trend analysis (GMGN is a memecoin trading platform) and comprehensive token analysis for various cryptocurrencies",
+    "Available Tools": [
+      "get_gmgn_trend",
+      "get_gmgn_token_info",
+      "analyze_token"
+    ],
+    "Source Code": "Source",
+    "External APIs": "UnifAI"
+  },
+  {
+    "Agent ID": "ZerionWalletAnalysisAgent",
+    "Description": "This agent can fetch and analyze the token and NFT holdings of a crypto wallet (must be EVM chain)",
+    "Available Tools": [
+      "fetch_wallet_tokens",
+      "fetch_wallet_nfts"
+    ],
+    "Source Code": "Source",
+    "External APIs": "Zerion"
+  },
+  {
+    "Agent ID": "ZkIgniteAnalystAgent",
+    "Description": "This agent analyzes zkSync Era DeFi opportunities in the zkIgnite program and has access to real-time yield and TVL data",
+    "Available Tools": [],
+    "Source Code": "Source",
+    "External APIs": "Merkl, DefiLlama"
+  }
+]
