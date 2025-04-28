@@ -31,3 +31,5 @@ axum = { version = "0.7", features = ["macros"] }
 reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "blocking"] }  
 ureq = { version = "2.9", features = ["json", "tls"] }  
 
+tokio-tungstenite = { version = "0.18", features = ["native-tls"] }  
+url = "2.3"  

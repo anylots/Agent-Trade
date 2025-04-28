@@ -1,0 +1,828 @@
+{
+    "aiSignals": [
+        {
+            "id": 1,
+            "name": "ClineMCP",
+            "symbol": "CLNMCP",
+            "priceChange": "+57.52%",
+            "price": "$200K",
+            "volume": "$574/421",
+            "rank": 1,
+            "time": "23:07:25",
+            "topPercentage": "Top10 98.66%",
+            "avatar": "/avatars/cline.png",
+            "stats": {
+                "entryPrice": "$0.0454309",
+                "marketValue": "$543K",
+                "profit": "$253.7K",
+                "holders": 168
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "House",
+            "symbol": "HOUSE",
+            "priceChange": "-2.51%",
+            "price": "$111K",
+            "volume": "$214/102",
+            "rank": 2,
+            "time": "23:05:12",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/house.png",
+            "stats": {
+                "entryPrice": "$0.0000061",
+                "marketValue": "$306.1K",
+                "profit": "$19.2K",
+                "holders": 565
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "GEN",
+            "symbol": "GEN",
+            "priceChange": "+37.13%",
+            "price": "$1,603.7",
+            "volume": "$2/2",
+            "rank": 3,
+            "time": "22:57:59",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/gen.png",
+            "stats": {
+                "entryPrice": "$0.0001336",
+                "marketValue": "$133.9K",
+                "profit": "$39.9K",
+                "holders": 745
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "LetsBONK",
+            "symbol": "LETSBONK",
+            "priceChange": "-2.91%",
+            "price": "$48.1K",
+            "volume": "$89/89",
+            "rank": 4,
+            "time": "22:57:27",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/letsbonk.png",
+            "stats": {
+                "entryPrice": "$0.0000365",
+                "marketValue": "$136.5K",
+                "profit": "$38.1K",
+                "holders": 280
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "MvG",
+            "symbol": "MVG",
+            "priceChange": "+5.18%",
+            "price": "$73.1K",
+            "volume": "$132/146",
+            "rank": 5,
+            "time": "22:57:20",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/mvg.png",
+            "stats": {
+                "entryPrice": "$0.0001609",
+                "marketValue": "$160.9K",
+                "profit": "$41.2K",
+                "holders": 870
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Darshan",
+            "symbol": "DARSHAN",
+            "priceChange": "-21.35%",
+            "price": "$25.3K",
+            "volume": "$42/133",
+            "rank": 6,
+            "time": "22:57:28",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/darshan.png",
+            "stats": {
+                "entryPrice": "$0.0001609",
+                "marketValue": "$160.9K",
+                "profit": "$41.2K",
+                "holders": 870
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Darshan",
+            "symbol": "DARSHAN",
+            "priceChange": "-21.35%",
+            "price": "$25.3K",
+            "volume": "$42/133",
+            "rank": 7,
+            "time": "22:57:28",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/darshan.png",
+            "stats": {
+                "entryPrice": "$0.0001609",
+                "marketValue": "$160.9K",
+                "profit": "$41.2K",
+                "holders": 870
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Darshan",
+            "symbol": "DARSHAN",
+            "priceChange": "-21.35%",
+            "price": "$25.3K",
+            "volume": "$42/133",
+            "rank": 8,
+            "time": "22:57:28",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/darshan.png",
+            "stats": {
+                "entryPrice": "$0.0001609",
+                "marketValue": "$160.9K",
+                "profit": "$41.2K",
+                "holders": 870
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Darshan",
+            "symbol": "DARSHAN",
+            "priceChange": "-21.35%",
+            "price": "$25.3K",
+            "volume": "$42/133",
+            "rank": 9,
+            "time": "22:57:28",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/darshan.png",
+            "stats": {
+                "entryPrice": "$0.0001609",
+                "marketValue": "$160.9K",
+                "profit": "$41.2K",
+                "holders": 870
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Darshan",
+            "symbol": "DARSHAN",
+            "priceChange": "-21.35%",
+            "price": "$25.3K",
+            "volume": "$42/133",
+            "rank": 10,
+            "time": "22:57:28",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/darshan.png",
+            "stats": {
+                "entryPrice": "$0.0001609",
+                "marketValue": "$160.9K",
+                "profit": "$41.2K",
+                "holders": 870
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Darshan",
+            "symbol": "DARSHAN",
+            "priceChange": "-21.35%",
+            "price": "$25.3K",
+            "volume": "$42/133",
+            "rank": 11,
+            "time": "22:57:28",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/darshan.png",
+            "stats": {
+                "entryPrice": "$0.0001609",
+                "marketValue": "$160.9K",
+                "profit": "$41.2K",
+                "holders": 870
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Darshan",
+            "symbol": "DARSHAN",
+            "priceChange": "-21.35%",
+            "price": "$25.3K",
+            "volume": "$42/133",
+            "rank": 12,
+            "time": "22:57:28",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/darshan.png",
+            "stats": {
+                "entryPrice": "$0.0001609",
+                "marketValue": "$160.9K",
+                "profit": "$41.2K",
+                "holders": 870
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Darshan",
+            "symbol": "DARSHAN",
+            "priceChange": "-21.35%",
+            "price": "$25.3K",
+            "volume": "$42/133",
+            "rank": 13,
+            "time": "22:57:28",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/darshan.png",
+            "stats": {
+                "entryPrice": "$0.0001609",
+                "marketValue": "$160.9K",
+                "profit": "$41.2K",
+                "holders": 870
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Darshan",
+            "symbol": "DARSHAN",
+            "priceChange": "-21.35%",
+            "price": "$25.3K",
+            "volume": "$42/133",
+            "rank": 14,
+            "time": "22:57:28",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/darshan.png",
+            "stats": {
+                "entryPrice": "$0.0001609",
+                "marketValue": "$160.9K",
+                "profit": "$41.2K",
+                "holders": 870
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Darshan",
+            "symbol": "DARSHAN",
+            "priceChange": "-21.35%",
+            "price": "$25.3K",
+            "volume": "$42/133",
+            "rank": 15,
+            "time": "22:57:28",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/darshan.png",
+            "stats": {
+                "entryPrice": "$0.0001609",
+                "marketValue": "$160.9K",
+                "profit": "$41.2K",
+                "holders": 870
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Darshan",
+            "symbol": "DARSHAN",
+            "priceChange": "-21.35%",
+            "price": "$25.3K",
+            "volume": "$42/133",
+            "rank": 16,
+            "time": "22:57:28",
+            "topPercentage": "Top10 35.71%",
+            "avatar": "/avatars/darshan.png",
+            "stats": {
+                "entryPrice": "$0.0001609",
+                "marketValue": "$160.9K",
+                "profit": "$41.2K",
+                "holders": 870
+            },
+            "buttons": [
+                "0.1",
+                "0.5",
+                "1",
+                "2"
+            ],
+            "percentages": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ]
+        }
+    ],
+    "memeTokens": [
+        {
+            "id": 1,
+            "name": "EINSTEIN",
+            "description": "New Einstein RL",
+            "price": "$10.1K",
+            "volume": "$5,674.82",
+            "priceChanges": {
+                "green": "+42.1%",
+                "red": "+3.3%",
+                "yellow": "10%",
+                "blue": "15%",
+                "green2": "0%"
+            },
+            "time": "4s",
+            "txs": "10 TXs",
+            "holders": "18",
+            "avatar": "/avatars/einstein.png",
+            "category": "新创建"
+        },
+        {
+            "id": 2,
+            "name": "JWC",
+            "description": "John Wick Coin",
+            "price": "$51.5K",
+            "volume": "$14.7K",
+            "priceChanges": {
+                "green": "96.8%",
+                "red": "+76%",
+                "yellow": "0%",
+                "blue": "0%",
+                "green2": "0%"
+            },
+            "time": "14h",
+            "txs": "24 TXs",
+            "holders": "98",
+            "avatar": "/avatars/jwc.png",
+            "category": "即将打满"
+        },
+        {
+            "id": 3,
+            "name": "JAWS",
+            "description": "Jaws TikTok Trend",
+            "price": "$49.2K",
+            "volume": "$95.4K",
+            "priceChanges": {
+                "green": "100%",
+                "red": "+27%",
+                "yellow": "Run",
+                "blue": "0%",
+                "green2": "0%"
+            },
+            "time": "5min/8h",
+            "txs": "360 TXs",
+            "holders": "1507",
+            "avatar": "/avatars/jaws.png",
+            "category": "已开盘"
+        },
+        {
+            "id": 4,
+            "name": "Walrus",
+            "description": "WALRUS",
+            "price": "$0",
+            "volume": "$0",
+            "priceChanges": {
+                "green": "1%",
+                "red": "+0%",
+                "yellow": "0%",
+                "blue": "0%",
+                "green2": "0%"
+            },
+            "time": "4s",
+            "txs": "0 TXs",
+            "holders": "0",
+            "avatar": "/avatars/walrus.png",
+            "category": "新创建"
+        },
+        {
+            "id": 5,
+            "name": "IEM",
+            "description": "Immortal Elon Musk",
+            "price": "$47.4K",
+            "volume": "$12.6K",
+            "priceChanges": {
+                "green": "95.2%",
+                "red": "+20%",
+                "yellow": "Run",
+                "blue": "0%",
+                "green2": "75%"
+            },
+            "time": "5h",
+            "txs": "81 TXs",
+            "holders": "236",
+            "avatar": "/avatars/iem.png",
+            "category": "即将打满"
+        },
+        {
+            "id": 6,
+            "name": "ME",
+            "description": "my greatest enemy",
+            "price": "$73.7K",
+            "volume": "$220.8K",
+            "priceChanges": {
+                "green": "100%",
+                "red": "+22%",
+                "yellow": "Run",
+                "blue": "0%",
+                "green2": "0%"
+            },
+            "time": "7min/35min",
+            "txs": "664 TXs",
+            "holders": "3384",
+            "avatar": "/avatars/me.png",
+            "category": "已开盘"
+        },
+        {
+            "id": 7,
+            "name": "SORANA",
+            "description": "Chinese Solana Killer",
+            "price": "$5,215.59",
+            "volume": "$2,315.87",
+            "priceChanges": {
+                "green": "14.8%",
+                "red": "+11%",
+                "yellow": "Run",
+                "blue": "4%",
+                "green2": "0%"
+            },
+            "time": "5s",
+            "txs": "11 TXs",
+            "holders": "31",
+            "avatar": "/avatars/sorana.png",
+            "category": "新创建"
+        },
+        {
+            "id": 8,
+            "name": "FNVZ",
+            "description": "Finavize",
+            "price": "$45.3K",
+            "volume": "$10.4K",
+            "priceChanges": {
+                "green": "94.3%",
+                "red": "+49%",
+                "yellow": "0%",
+                "blue": "37%",
+                "green2": "37%"
+            },
+            "time": "32s",
+            "txs": "99 TXs",
+            "holders": "77",
+            "avatar": "/avatars/fnvz.png",
+            "category": "即将打满"
+        },
+        {
+            "id": 9,
+            "name": "MCE",
+            "description": "Main Character Energy",
+            "price": "$4,809.39",
+            "volume": "$695.74",
+            "priceChanges": {
+                "green": "11.8%",
+                "red": "+9%",
+                "yellow": "6%",
+                "blue": "6%",
+                "green2": "0%"
+            },
+            "time": "5s",
+            "txs": "3 TXs",
+            "holders": "5",
+            "avatar": "/avatars/mce.png",
+            "category": "新创建"
+        },
+        {
+            "id": 10,
+            "name": "MCE",
+            "description": "Main Character Energy",
+            "price": "$4,809.39",
+            "volume": "$695.74",
+            "priceChanges": {
+                "green": "11.8%",
+                "red": "+9%",
+                "yellow": "6%",
+                "blue": "6%",
+                "green2": "0%"
+            },
+            "time": "5s",
+            "txs": "3 TXs",
+            "holders": "5",
+            "avatar": "/avatars/mce.png",
+            "category": "新创建"
+        },
+        {
+            "id": 11,
+            "name": "MCE",
+            "description": "Main Character Energy",
+            "price": "$4,809.39",
+            "volume": "$695.74",
+            "priceChanges": {
+                "green": "11.8%",
+                "red": "+9%",
+                "yellow": "6%",
+                "blue": "6%",
+                "green2": "0%"
+            },
+            "time": "5s",
+            "txs": "3 TXs",
+            "holders": "5",
+            "avatar": "/avatars/mce.png",
+            "category": "新创建"
+        },
+        {
+            "id": 12,
+            "name": "MCE",
+            "description": "Main Character Energy",
+            "price": "$4,809.39",
+            "volume": "$695.74",
+            "priceChanges": {
+                "green": "11.8%",
+                "red": "+9%",
+                "yellow": "6%",
+                "blue": "6%",
+                "green2": "0%"
+            },
+            "time": "5s",
+            "txs": "3 TXs",
+            "holders": "5",
+            "avatar": "/avatars/mce.png",
+            "category": "新创建"
+        },
+        {
+            "id": 13,
+            "name": "MCE",
+            "description": "Main Character Energy",
+            "price": "$4,809.39",
+            "volume": "$695.74",
+            "priceChanges": {
+                "green": "11.8%",
+                "red": "+9%",
+                "yellow": "6%",
+                "blue": "6%",
+                "green2": "0%"
+            },
+            "time": "5s",
+            "txs": "3 TXs",
+            "holders": "5",
+            "avatar": "/avatars/mce.png",
+            "category": "新创建"
+        },
+        {
+            "id": 14,
+            "name": "MCE",
+            "description": "Main Character Energy",
+            "price": "$4,809.39",
+            "volume": "$695.74",
+            "priceChanges": {
+                "green": "11.8%",
+                "red": "+9%",
+                "yellow": "6%",
+                "blue": "6%",
+                "green2": "0%"
+            },
+            "time": "5s",
+            "txs": "3 TXs",
+            "holders": "5",
+            "avatar": "/avatars/mce.png",
+            "category": "新创建"
+        },
+        {
+            "id": 15,
+            "name": "MCE",
+            "description": "Main Character Energy",
+            "price": "$4,809.39",
+            "volume": "$695.74",
+            "priceChanges": {
+                "green": "11.8%",
+                "red": "+9%",
+                "yellow": "6%",
+                "blue": "6%",
+                "green2": "0%"
+            },
+            "time": "5s",
+            "txs": "3 TXs",
+            "holders": "5",
+            "avatar": "/avatars/mce.png",
+            "category": "新创建"
+        },
+        {
+            "id": 16,
+            "name": "MCE",
+            "description": "Main Character Energy",
+            "price": "$4,809.39",
+            "volume": "$695.74",
+            "priceChanges": {
+                "green": "11.8%",
+                "red": "+9%",
+                "yellow": "6%",
+                "blue": "6%",
+                "green2": "0%"
+            },
+            "time": "5s",
+            "txs": "3 TXs",
+            "holders": "5",
+            "avatar": "/avatars/mce.png",
+            "category": "新创建"
+        },
+        {
+            "id": 17,
+            "name": "MCE",
+            "description": "Main Character Energy",
+            "price": "$4,809.39",
+            "volume": "$695.74",
+            "priceChanges": {
+                "green": "11.8%",
+                "red": "+9%",
+                "yellow": "6%",
+                "blue": "6%",
+                "green2": "0%"
+            },
+            "time": "5s",
+            "txs": "3 TXs",
+            "holders": "5",
+            "avatar": "/avatars/mce.png",
+            "category": "新创建"
+        },
+        {
+            "id": 18,
+            "name": "MCE",
+            "description": "Main Character Energy",
+            "price": "$4,809.39",
+            "volume": "$695.74",
+            "priceChanges": {
+                "green": "11.8%",
+                "red": "+9%",
+                "yellow": "6%",
+                "blue": "6%",
+                "green2": "0%"
+            },
+            "time": "5s",
+            "txs": "3 TXs",
+            "holders": "5",
+            "avatar": "/avatars/mce.png",
+            "category": "新创建"
+        }
+    ]
+}

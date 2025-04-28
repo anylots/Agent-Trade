@@ -1,0 +1,482 @@
+[
+    {
+        "id": 1,
+        "name": "ClineMCP",
+        "symbol": "CLNMCP",
+        "priceChange": "+57.52%",
+        "price": "$200K",
+        "volume": "$574/421",
+        "rank": 1,
+        "time": "23:07:25",
+        "topPercentage": "Top10 98.66%",
+        "avatar": "/avatars/cline.png",
+        "stats": {
+            "entryPrice": "$0.0454309",
+            "marketValue": "$543K",
+            "profit": "$253.7K",
+            "holders": 168
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "House",
+        "symbol": "HOUSE",
+        "priceChange": "-2.51%",
+        "price": "$111K",
+        "volume": "$214/102",
+        "rank": 2,
+        "time": "23:05:12",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/house.png",
+        "stats": {
+            "entryPrice": "$0.0000061",
+            "marketValue": "$306.1K",
+            "profit": "$19.2K",
+            "holders": 565
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "GEN",
+        "symbol": "GEN",
+        "priceChange": "+37.13%",
+        "price": "$1,603.7",
+        "volume": "$2/2",
+        "rank": 3,
+        "time": "22:57:59",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/gen.png",
+        "stats": {
+            "entryPrice": "$0.0001336",
+            "marketValue": "$133.9K",
+            "profit": "$39.9K",
+            "holders": 745
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "LetsBONK",
+        "symbol": "LETSBONK",
+        "priceChange": "-2.91%",
+        "price": "$48.1K",
+        "volume": "$89/89",
+        "rank": 4,
+        "time": "22:57:27",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/letsbonk.png",
+        "stats": {
+            "entryPrice": "$0.0000365",
+            "marketValue": "$136.5K",
+            "profit": "$38.1K",
+            "holders": 280
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "MvG",
+        "symbol": "MVG",
+        "priceChange": "+5.18%",
+        "price": "$73.1K",
+        "volume": "$132/146",
+        "rank": 5,
+        "time": "22:57:20",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/mvg.png",
+        "stats": {
+            "entryPrice": "$0.0001609",
+            "marketValue": "$160.9K",
+            "profit": "$41.2K",
+            "holders": 870
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Darshan",
+        "symbol": "DARSHAN",
+        "priceChange": "-21.35%",
+        "price": "$25.3K",
+        "volume": "$42/133",
+        "rank": 6,
+        "time": "22:57:28",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/darshan.png",
+        "stats": {
+            "entryPrice": "$0.0001609",
+            "marketValue": "$160.9K",
+            "profit": "$41.2K",
+            "holders": 870
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Darshan",
+        "symbol": "DARSHAN",
+        "priceChange": "-21.35%",
+        "price": "$25.3K",
+        "volume": "$42/133",
+        "rank": 7,
+        "time": "22:57:28",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/darshan.png",
+        "stats": {
+            "entryPrice": "$0.0001609",
+            "marketValue": "$160.9K",
+            "profit": "$41.2K",
+            "holders": 870
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Darshan",
+        "symbol": "DARSHAN",
+        "priceChange": "-21.35%",
+        "price": "$25.3K",
+        "volume": "$42/133",
+        "rank": 8,
+        "time": "22:57:28",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/darshan.png",
+        "stats": {
+            "entryPrice": "$0.0001609",
+            "marketValue": "$160.9K",
+            "profit": "$41.2K",
+            "holders": 870
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Darshan",
+        "symbol": "DARSHAN",
+        "priceChange": "-21.35%",
+        "price": "$25.3K",
+        "volume": "$42/133",
+        "rank": 9,
+        "time": "22:57:28",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/darshan.png",
+        "stats": {
+            "entryPrice": "$0.0001609",
+            "marketValue": "$160.9K",
+            "profit": "$41.2K",
+            "holders": 870
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Darshan",
+        "symbol": "DARSHAN",
+        "priceChange": "-21.35%",
+        "price": "$25.3K",
+        "volume": "$42/133",
+        "rank": 10,
+        "time": "22:57:28",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/darshan.png",
+        "stats": {
+            "entryPrice": "$0.0001609",
+            "marketValue": "$160.9K",
+            "profit": "$41.2K",
+            "holders": 870
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Darshan",
+        "symbol": "DARSHAN",
+        "priceChange": "-21.35%",
+        "price": "$25.3K",
+        "volume": "$42/133",
+        "rank": 11,
+        "time": "22:57:28",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/darshan.png",
+        "stats": {
+            "entryPrice": "$0.0001609",
+            "marketValue": "$160.9K",
+            "profit": "$41.2K",
+            "holders": 870
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Darshan",
+        "symbol": "DARSHAN",
+        "priceChange": "-21.35%",
+        "price": "$25.3K",
+        "volume": "$42/133",
+        "rank": 12,
+        "time": "22:57:28",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/darshan.png",
+        "stats": {
+            "entryPrice": "$0.0001609",
+            "marketValue": "$160.9K",
+            "profit": "$41.2K",
+            "holders": 870
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Darshan",
+        "symbol": "DARSHAN",
+        "priceChange": "-21.35%",
+        "price": "$25.3K",
+        "volume": "$42/133",
+        "rank": 13,
+        "time": "22:57:28",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/darshan.png",
+        "stats": {
+            "entryPrice": "$0.0001609",
+            "marketValue": "$160.9K",
+            "profit": "$41.2K",
+            "holders": 870
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Darshan",
+        "symbol": "DARSHAN",
+        "priceChange": "-21.35%",
+        "price": "$25.3K",
+        "volume": "$42/133",
+        "rank": 14,
+        "time": "22:57:28",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/darshan.png",
+        "stats": {
+            "entryPrice": "$0.0001609",
+            "marketValue": "$160.9K",
+            "profit": "$41.2K",
+            "holders": 870
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Darshan",
+        "symbol": "DARSHAN",
+        "priceChange": "-21.35%",
+        "price": "$25.3K",
+        "volume": "$42/133",
+        "rank": 15,
+        "time": "22:57:28",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/darshan.png",
+        "stats": {
+            "entryPrice": "$0.0001609",
+            "marketValue": "$160.9K",
+            "profit": "$41.2K",
+            "holders": 870
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Darshan",
+        "symbol": "DARSHAN",
+        "priceChange": "-21.35%",
+        "price": "$25.3K",
+        "volume": "$42/133",
+        "rank": 16,
+        "time": "22:57:28",
+        "topPercentage": "Top10 35.71%",
+        "avatar": "/avatars/darshan.png",
+        "stats": {
+            "entryPrice": "$0.0001609",
+            "marketValue": "$160.9K",
+            "profit": "$41.2K",
+            "holders": 870
+        },
+        "buttons": [
+            "0.1",
+            "0.5",
+            "1",
+            "2"
+        ],
+        "percentages": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+        ]
+    }
+]

@@ -1,8 +1,12 @@
+use std::collections::HashMap;
 use std::convert::Infallible;
 use std::net::SocketAddr;
 use std::time::Duration;
 
 use crate::service::sns::call_heurist_mesh;
+use crate::service::token::solana::{
+    get_ai_signals_paginated, get_meme_tokens_paginated, PaginationParams,
+};
 use axum::body::Body;
 use axum::debug_handler;
 use axum::extract::Request;
@@ -97,12 +101,75 @@ async fn logging_middleware(req: Request, next: Next) -> Response {
     next.run(req).await
 }
 
+// Request structure for token pagination
+#[derive(Debug, Deserialize)]
+pub struct TokenPaginationRequest {
+    #[serde(rename = "pageNum")]
+    page_num: usize,
+    #[serde(rename = "pageSize")]
+    page_size: usize,
+    #[serde(rename = "extendParam")]
+    extend_param: Option<HashMap<String, String>>,
+}
+
 pub fn create_router() -> Router {
     Router::new()
         .route("/agent/prompt", post(handle_agent_prompt))
         .route("/agent/prompt_trade", post(handle_agent_trade))
         .route("/agent/chat/completions", post(chat_stream))
+        .route("/token/ai_signals", post(handle_ai_signals))
+        .route("/token/meme_tokens", post(handle_meme_tokens))
         .layer(middleware::from_fn(logging_middleware))
+}
+
+// Handler for AI signals pagination
+pub async fn handle_ai_signals(
+    Json(payload): Json<TokenPaginationRequest>,
+) -> Result<impl IntoResponse, StatusCode> {
+    log::info!(
+        "AI Signals request: page_num={}, page_size={}",
+        payload.page_num,
+        payload.page_size
+    );
+
+    let params = PaginationParams {
+        page_num: payload.page_num,
+        page_size: payload.page_size,
+        extend_param: payload.extend_param.unwrap_or_default(),
+    };
+
+    match get_ai_signals_paginated(params).await {
+        Ok(response) => Ok((StatusCode::OK, Json(response))),
+        Err(e) => {
+            log::error!("Error getting AI signals: {}", e);
+            Err(StatusCode::INTERNAL_SERVER_ERROR)
+        }
+    }
+}
+
+// Handler for meme tokens pagination
+pub async fn handle_meme_tokens(
+    Json(payload): Json<TokenPaginationRequest>,
+) -> Result<impl IntoResponse, StatusCode> {
+    log::info!(
+        "Meme Tokens request: page_num={}, page_size={}",
+        payload.page_num,
+        payload.page_size
+    );
+
+    let params = PaginationParams {
+        page_num: payload.page_num,
+        page_size: payload.page_size,
+        extend_param: payload.extend_param.unwrap_or_default(),
+    };
+
+    match get_meme_tokens_paginated(params).await {
+        Ok(response) => Ok((StatusCode::OK, Json(response))),
+        Err(e) => {
+            log::error!("Error getting meme tokens: {}", e);
+            Err(StatusCode::INTERNAL_SERVER_ERROR)
+        }
+    }
 }
 
 #[debug_handler]
