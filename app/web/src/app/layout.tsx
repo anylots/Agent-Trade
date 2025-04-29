@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Agent trending - AI信号 & MEME",
+  title: "Agent trending - AI Signal & MEME",
   description: "Agent trading platform with AI signals and MEME tokens",
 };
 

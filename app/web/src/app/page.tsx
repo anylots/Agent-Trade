@@ -15,7 +15,7 @@ export default function Home() {
 
       <Tabs defaultValue="ai-signals" className="w-full" onValueChange={setActiveTab}>
         <TabsList className="mb-4">
-          <TabsTrigger value="ai-signals" className="text-base">AI信号</TabsTrigger>
+          <TabsTrigger value="ai-signals" className="text-base">AI Signal</TabsTrigger>
           <TabsTrigger value="meme" className="text-base">Meme</TabsTrigger>
         </TabsList>
 

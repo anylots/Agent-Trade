@@ -14,7 +14,7 @@ pub struct AiSignalStats {
     pub entry_price: String,
     #[serde(rename = "marketValue")]
     pub market_value: String,
-    pub profit: String,
+    pub volume: String,
     pub holders: u32,
 }
 
@@ -23,6 +23,10 @@ pub struct AiSignal {
     pub id: u32,
     pub name: String,
     pub symbol: String,
+    #[serde(rename = "tokenAddress")]
+    pub token_address: String,
+    #[serde(rename = "logoUri")]
+    pub logo_uri: String,
     #[serde(rename = "priceChange")]
     pub price_change: String,
     pub price: String,
@@ -33,8 +37,6 @@ pub struct AiSignal {
     pub top_percentage: String,
     pub avatar: String,
     pub stats: AiSignalStats,
-    pub buttons: Vec<String>,
-    pub percentages: Vec<String>,
 }
 
 // Define the structures for Meme Tokens
@@ -101,21 +103,19 @@ fn load_ai_signals_from_pool(
     let mut data: Vec<AiSignal> = Vec::with_capacity(pools.len());
 
     for (index, pool) in pools.iter().enumerate() {
+        let dis_token = if TOKEN_IN_LIST.contains(&pool.mint_a.symbol.as_str()) {
+            &pool.mint_b
+        } else {
+            &pool.mint_a
+        };
         // Create a new AiSignal from pool data
         let signal = AiSignal {
             // Basic identification
-            id: (index + 1) as u32, // Use index+1 as ID
-            name: if TOKEN_IN_LIST.contains(&pool.mint_a.symbol.as_str()) {
-                pool.mint_b.name.clone()
-            } else {
-                pool.mint_a.name.clone()
-            },
-            symbol: if TOKEN_IN_LIST.contains(&pool.mint_a.symbol.as_str()) {
-                pool.mint_b.symbol.clone()
-            } else {
-                pool.mint_a.symbol.clone()
-            },
-
+            id: (params.page_num * params.page_size + index + 1) as u32, // Use index+1 as ID
+            name: dis_token.name.clone(),
+            symbol: dis_token.symbol.clone(),
+            token_address: dis_token.address.clone(),
+            logo_uri: dis_token.logo_uri.clone().unwrap_or_default(),
             // Price information
             price_change: format!("+{:.2}%", pool.day.apr), // Use APR as price change
             price: format!("${:.2}", pool.price),           // Format pool price
@@ -137,23 +137,9 @@ fn load_ai_signals_from_pool(
             stats: AiSignalStats {
                 entry_price: format!("${:.7}", pool.price / 100.0), // Entry price as fraction of current
                 market_value: format!("${:.0}K", pool.tvl / 1000.0), // TVL in thousands
-                profit: format!("${:.1}K", pool.day.volume / 1000.0), // Daily volume in thousands
+                volume: format!("${:.1}K", pool.day.volume / 1000.0), // Daily volume in thousands
                 holders: 100 + (index * 10) as u32,                 // Generate holder count
             },
-
-            // UI elements
-            buttons: vec![
-                "0.1".to_string(),
-                "0.5".to_string(),
-                "1".to_string(),
-                "2".to_string(),
-            ],
-            percentages: vec![
-                "25%".to_string(),
-                "50%".to_string(),
-                "75%".to_string(),
-                "100%".to_string(),
-            ],
         };
 
         data.push(signal);

@@ -7,26 +7,26 @@ export function Footer() {
         <div className="flex items-center space-x-4">
           <div className="flex items-center text-yellow-400">
             <Sun size={16} className="mr-1" />
-            <span className="text-xs">邀请返佣</span>
+            <span className="text-xs">Invitation</span>
           </div>
           <div className="flex items-center text-gray-400">
             <MessageCircle size={16} className="mr-1" />
-            <span className="text-xs">会员订阅</span>
+            <span className="text-xs">Member Subscription</span>
           </div>
         </div>
-        
+
         <div className="flex items-center space-x-4">
           <div className="flex items-center text-gray-400">
             <LifeBuoy size={16} className="mr-1" />
-            <span className="text-xs">在线客服</span>
+            <span className="text-xs">Online Customer Service</span>
           </div>
           <div className="flex items-center text-gray-400">
             <Settings size={16} className="mr-1" />
-            <span className="text-xs">反馈建议</span>
+            <span className="text-xs">Feedback</span>
           </div>
           <div className="flex items-center text-gray-400">
             <Bot size={16} className="mr-1" />
-            <span className="text-xs">使用教程</span>
+            <span className="text-xs">Tutorial</span>
           </div>
           <div className="flex items-center text-gray-400">
             <ArrowRight size={16} className="mr-1" />
@@ -34,10 +34,10 @@ export function Footer() {
           </div>
           <div className="flex items-center text-gray-400">
             <Zap size={16} className="mr-1" />
-            <span className="text-xs">APP下载</span>
+            <span className="text-xs">APP Download</span>
           </div>
         </div>
-        
+
         <div className="text-gray-400 text-xs">
           SOL: $149.34
         </div>

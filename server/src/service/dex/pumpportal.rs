@@ -80,4 +80,21 @@ async fn test_subscribe() {
         Ok(_) => println!("Test completed successfully"),
         Err(e) => println!("Test failed: {}", e),
     }
+
+    // {
+    //     "bondingCurveKey": String("59upgek4PdEqBbauSKR7xeJFPUvwRn2Q63GU7FpGnE9e"),
+    //     "initialBuy": Number(63909090.90909),
+    //     "marketCapSol": Number(31.61261261261256),
+    //     "mint": String("pk4Etrn7947dnDyVkuFKK4V8GXy13m4rVsLRinypump"),
+    //     "name": String("Zusu"),
+    //     "pool": String("pump"),
+    //     "signature": String("4vYbwcXbh9rQZajoCUDPSFd7CKe73awok8LD5EQvoWXWVDLnYcZQnfDQhiC56AJN4vrbr6UVDH1ZRqJu7TDNFsxF"),
+    //     "solAmount": Number(1.9),
+    //     "symbol": String("Zusu"),
+    //     "traderPublicKey": String("AzbQWA9JFMwtkLC4niBQt4RfwxdMNwVuWRZxqwBkzwn9"),
+    //     "txType": String("create"),
+    //     "uri": String("https://ipfs.io/ipfs/QmQ41ok8XUfmx39SMjENdU13M6ycZbzpS337UDTJYLTRj5"),
+    //     "vSolInBondingCurve": Number(31.899999999999977),
+    //     "vTokensInBondingCurve": Number(1009090909.09091)
+    // }
 }

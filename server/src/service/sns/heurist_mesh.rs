@@ -88,7 +88,16 @@ mod tests {
     fn test_call_heurist_mesh_basic() -> Result<()> {
         env_logger::init();
         dotenv::dotenv().ok();
-        let response = call_heurist_mesh("TwitterInfoAgent", "BeckerC999的最新4条推文是什么")?;
+        // let response = call_heurist_mesh("TwitterInfoAgent", "What are BeckerC999's last 4 tweets?")?;
+        // let response = call_heurist_mesh(
+        //     "ElfaTwitterIntelligenceAgent",
+        //     r#"{  
+        //     "tool": "get_trending_tokens",  
+        //     "tool_arguments": {"time_window": "24h",},  
+        //     "query": "Get the 32 popular tokens on Solana for reference"  
+        // }"#
+        // ).unwrap();
+        let response = call_heurist_mesh("BitquerySolanaTokenInfoAgent", "get_top_trending_tokens")?;
 
         println!("response: {:?}", response);
         // Verify response is not empty

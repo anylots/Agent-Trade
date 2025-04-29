@@ -23,7 +23,7 @@ pub fn analyze_pools() -> Result<Vec<PoolInfo>> {
 
     for i in 0..2 {
         // Query Raydium pools
-        let response = query_raydium_pools("all", 50 + i, "volume24h", "desc", 16)?;
+        let response = query_raydium_pools("all", 100 + i, "volume24h", "desc", 16)?;
 
         // Process each pool in the response
         for pool in response.data.data {

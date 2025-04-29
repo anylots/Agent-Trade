@@ -14,21 +14,11 @@
             "stats": {
                 "entryPrice": "$0.0454309",
                 "marketValue": "$543K",
-                "profit": "$253.7K",
+                "volume": "$253.7K",
                 "holders": 168
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 2,
@@ -44,21 +34,11 @@
             "stats": {
                 "entryPrice": "$0.0000061",
                 "marketValue": "$306.1K",
-                "profit": "$19.2K",
+                "volume": "$19.2K",
                 "holders": 565
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 3,
@@ -74,21 +54,11 @@
             "stats": {
                 "entryPrice": "$0.0001336",
                 "marketValue": "$133.9K",
-                "profit": "$39.9K",
+                "volume": "$39.9K",
                 "holders": 745
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 4,
@@ -104,21 +74,11 @@
             "stats": {
                 "entryPrice": "$0.0000365",
                 "marketValue": "$136.5K",
-                "profit": "$38.1K",
+                "volume": "$38.1K",
                 "holders": 280
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 5,
@@ -134,21 +94,11 @@
             "stats": {
                 "entryPrice": "$0.0001609",
                 "marketValue": "$160.9K",
-                "profit": "$41.2K",
+                "volume": "$41.2K",
                 "holders": 870
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 6,
@@ -164,21 +114,11 @@
             "stats": {
                 "entryPrice": "$0.0001609",
                 "marketValue": "$160.9K",
-                "profit": "$41.2K",
+                "volume": "$41.2K",
                 "holders": 870
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 7,
@@ -194,21 +134,11 @@
             "stats": {
                 "entryPrice": "$0.0001609",
                 "marketValue": "$160.9K",
-                "profit": "$41.2K",
+                "volume": "$41.2K",
                 "holders": 870
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 8,
@@ -224,21 +154,11 @@
             "stats": {
                 "entryPrice": "$0.0001609",
                 "marketValue": "$160.9K",
-                "profit": "$41.2K",
+                "volume": "$41.2K",
                 "holders": 870
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 9,
@@ -254,21 +174,11 @@
             "stats": {
                 "entryPrice": "$0.0001609",
                 "marketValue": "$160.9K",
-                "profit": "$41.2K",
+                "volume": "$41.2K",
                 "holders": 870
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 10,
@@ -284,21 +194,11 @@
             "stats": {
                 "entryPrice": "$0.0001609",
                 "marketValue": "$160.9K",
-                "profit": "$41.2K",
+                "volume": "$41.2K",
                 "holders": 870
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 11,
@@ -314,21 +214,11 @@
             "stats": {
                 "entryPrice": "$0.0001609",
                 "marketValue": "$160.9K",
-                "profit": "$41.2K",
+                "volume": "$41.2K",
                 "holders": 870
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 12,
@@ -344,21 +234,11 @@
             "stats": {
                 "entryPrice": "$0.0001609",
                 "marketValue": "$160.9K",
-                "profit": "$41.2K",
+                "volume": "$41.2K",
                 "holders": 870
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 13,
@@ -374,21 +254,11 @@
             "stats": {
                 "entryPrice": "$0.0001609",
                 "marketValue": "$160.9K",
-                "profit": "$41.2K",
+                "volume": "$41.2K",
                 "holders": 870
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 14,
@@ -404,21 +274,11 @@
             "stats": {
                 "entryPrice": "$0.0001609",
                 "marketValue": "$160.9K",
-                "profit": "$41.2K",
+                "volume": "$41.2K",
                 "holders": 870
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 15,
@@ -434,21 +294,11 @@
             "stats": {
                 "entryPrice": "$0.0001609",
                 "marketValue": "$160.9K",
-                "profit": "$41.2K",
+                "volume": "$41.2K",
                 "holders": 870
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         },
         {
             "id": 16,
@@ -464,21 +314,11 @@
             "stats": {
                 "entryPrice": "$0.0001609",
                 "marketValue": "$160.9K",
-                "profit": "$41.2K",
+                "volume": "$41.2K",
                 "holders": 870
             },
-            "buttons": [
-                "0.1",
-                "0.5",
-                "1",
-                "2"
-            ],
-            "percentages": [
-                "25%",
-                "50%",
-                "75%",
-                "100%"
-            ]
+            "tokenAddress": "3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump",
+            "logoUri": "https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png"
         }
     ],
     "memeTokens": [

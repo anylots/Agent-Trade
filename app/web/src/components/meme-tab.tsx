@@ -47,9 +47,9 @@ export function MemeTab() {
   
   const categories = [
     { id: "all", name: "Pump" },
-    { id: "new", name: "新创建" },
-    { id: "coming", name: "即将打满" },
-    { id: "open", name: "已开盘" }
+    { id: "new", name: "Newly Created" },
+    { id: "coming", name: "Coming Soon" },
+    { id: "open", name: "Already Listed" }
   ];
   const observer = useRef<IntersectionObserver | null>(null);
   const lastTokenElementRef = useCallback(
@@ -117,9 +117,9 @@ export function MemeTab() {
           // Filter by category if needed
           if (params.category && params.category !== "all") {
             const categoryMap: Record<string, string> = {
-              "new": "新创建",
-              "coming": "即将打满",
-              "open": "已开盘"
+              "new": "Newly Created",
+              "coming": "Coming Soon",
+              "open": "Already Listed"
             };
             
             const categoryValue = categoryMap[params.category as keyof typeof categoryMap];
@@ -285,7 +285,7 @@ export function MemeTab() {
             ))}
             <Button variant="outline" className="bg-gray-800 border-gray-700 text-white hover:bg-gray-700">
               <Badge className="bg-yellow-500 text-black mr-2">B</Badge>
-              已监听
+              Monitoring
             </Button>
           </div>
           <div>
@@ -327,7 +327,7 @@ export function MemeTab() {
           ))}
           <Button variant="outline" className="bg-gray-800 border-gray-700 text-white hover:bg-gray-700">
             <Badge className="bg-yellow-500 text-black mr-2">B</Badge>
-            已监听
+            Monitoring
           </Button>
         </div>
         <div>
@@ -358,14 +358,14 @@ export function MemeTab() {
                     <div className="flex items-center space-x-2 mt-1">
                       <Clock size={14} className="text-gray-400" />
                       <span className="text-xs text-gray-400">{token.time}</span>
-                      {token.category === "已开盘" && (
+                      {token.category === "Already Listed" && (
                         <Badge className="bg-green-600 text-white text-xs">Run</Badge>
                       )}
-                      {token.category === "即将打满" && (
-                        <Badge className="bg-yellow-500 text-black text-xs">即将打满</Badge>
+                      {token.category === "Coming Soon" && (
+                        <Badge className="bg-yellow-500 text-black text-xs">Coming Soon</Badge>
                       )}
-                      {(!token.category || (token.category !== "已开盘" && token.category !== "即将打满")) && (
-                        <Badge className="bg-gray-600 text-white text-xs">新创建</Badge>
+                      {(!token.category || (token.category !== "Already Listed" && token.category !== "Coming Soon")) && (
+                        <Badge className="bg-gray-600 text-white text-xs">Newly Created</Badge>
                       )}
                     </div>
                   </div>
@@ -410,7 +410,7 @@ export function MemeTab() {
             
             <CardFooter className="p-0">
               {/* <Button className="w-full rounded-none bg-green-800 hover:bg-green-700 text-white py-2">
-                买入 0
+                Buy 0
               </Button> */}
             </CardFooter>
             </Card>
