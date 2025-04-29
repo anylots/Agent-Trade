@@ -3,6 +3,10 @@ use std::collections::HashMap;
 use std::fs;
 use std::path::Path;
 
+use crate::service::data::analyze::query_filtered_pools;
+
+const TOKEN_IN_LIST: &[&str] = &["SOL", "WSOL", "USDC", "USDT"];
+
 // Define the structures for AI Signals
 #[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AiSignalStats {
@@ -60,7 +64,7 @@ pub struct MemeToken {
 }
 
 // Define the query parameters structure
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct PaginationParams {
     pub page_num: usize,
     pub page_size: usize,
@@ -88,6 +92,76 @@ fn load_ai_signals() -> Result<Vec<AiSignal>, Box<dyn std::error::Error>> {
     Ok(data)
 }
 
+fn load_ai_signals_from_pool(
+    params: PaginationParams,
+) -> Result<Vec<AiSignal>, Box<dyn std::error::Error>> {
+    let (pools, _) = query_filtered_pools(params.page_num, params.page_size)?;
+
+    // Convert pools to AiSignal format
+    let mut data: Vec<AiSignal> = Vec::with_capacity(pools.len());
+
+    for (index, pool) in pools.iter().enumerate() {
+        // Create a new AiSignal from pool data
+        let signal = AiSignal {
+            // Basic identification
+            id: (index + 1) as u32, // Use index+1 as ID
+            name: if TOKEN_IN_LIST.contains(&pool.mint_a.symbol.as_str()) {
+                pool.mint_b.name.clone()
+            } else {
+                pool.mint_a.name.clone()
+            },
+            symbol: if TOKEN_IN_LIST.contains(&pool.mint_a.symbol.as_str()) {
+                pool.mint_b.symbol.clone()
+            } else {
+                pool.mint_a.symbol.clone()
+            },
+
+            // Price information
+            price_change: format!("+{:.2}%", pool.day.apr), // Use APR as price change
+            price: format!("${:.2}", pool.price),           // Format pool price
+            volume: format!("${:.0}/{:.0}", pool.day.volume, pool.week.volume), // Daily/weekly volume
+
+            // Ranking and timing
+            rank: (index + 1) as u32,     // Use index+1 as rank
+            time: "23:07:25".to_string(), // Use fixed time as in example
+
+            // Additional metrics
+            top_percentage: format!(
+                "Top{} {:.2}%",
+                if index < 10 { "10" } else { "50" },
+                (100.0 - (index as f64 * 1.5))
+            ), // Generate top percentage
+            avatar: format!("/avatars/{}.png", pool.mint_a.symbol.to_lowercase()), // Generate avatar path
+
+            // Financial statistics
+            stats: AiSignalStats {
+                entry_price: format!("${:.7}", pool.price / 100.0), // Entry price as fraction of current
+                market_value: format!("${:.0}K", pool.tvl / 1000.0), // TVL in thousands
+                profit: format!("${:.1}K", pool.day.volume / 1000.0), // Daily volume in thousands
+                holders: 100 + (index * 10) as u32,                 // Generate holder count
+            },
+
+            // UI elements
+            buttons: vec![
+                "0.1".to_string(),
+                "0.5".to_string(),
+                "1".to_string(),
+                "2".to_string(),
+            ],
+            percentages: vec![
+                "25%".to_string(),
+                "50%".to_string(),
+                "75%".to_string(),
+                "100%".to_string(),
+            ],
+        };
+
+        data.push(signal);
+    }
+
+    Ok(data)
+}
+
 // Helper function to load the MemeToken data
 fn load_meme() -> Result<Vec<MemeToken>, Box<dyn std::error::Error>> {
     let data_path = Path::new("src/service/token/solana-meme.json");
@@ -99,22 +173,32 @@ fn load_meme() -> Result<Vec<MemeToken>, Box<dyn std::error::Error>> {
 pub async fn get_ai_signals_paginated(
     params: PaginationParams,
 ) -> Result<AiSignalResponse, Box<dyn std::error::Error>> {
-    let data = load_ai_signals()?;
-
-    // Calculate pagination
-    let start_index = (params.page_num - 1) * params.page_size;
-    let end_index = std::cmp::min(start_index + params.page_size, data.len());
-
-    // Get the paginated list
-    let paginated_list = if start_index < data.len() {
-        data[start_index..end_index].to_vec()
-    } else {
-        Vec::new()
+    // Try to load AI signals from pool first
+    let pool_params = PaginationParams {
+        page_num: params.page_num,
+        page_size: params.page_size,
+        extend_param: HashMap::new(),
     };
 
-    // Create the response
+    let data = match load_ai_signals_from_pool(pool_params) {
+        Ok(pool_data) => {
+            if !pool_data.is_empty() {
+                // If we successfully got data from pools, use it
+                pool_data
+            } else {
+                // Fallback to static data if pool data is empty
+                load_ai_signals()?
+            }
+        }
+        Err(_) => {
+            // Fallback to static data if there was an error loading from pools
+            load_ai_signals()?
+        }
+    };
+
+    // Create the response with the data
     let response = AiSignalResponse {
-        list: paginated_list,
+        list: data,
         extend_data: HashMap::new(), // Initialize with empty HashMap, can be populated as needed
     };
 

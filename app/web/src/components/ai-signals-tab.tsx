@@ -264,9 +264,9 @@ export function AISignalsTab() {
               <div
                 key={percentIndex}
                 className={`h-8 ${percentIndex === 0 ? 'bg-pink-900/30' :
-                    percentIndex === 1 ? 'bg-pink-800/30' :
-                      percentIndex === 2 ? 'bg-pink-700/30' :
-                        'bg-pink-600/30'
+                  percentIndex === 1 ? 'bg-pink-800/30' :
+                    percentIndex === 2 ? 'bg-pink-700/30' :
+                      'bg-pink-600/30'
                   }`}
               ></div>
             ))}
@@ -350,7 +350,7 @@ export function AISignalsTab() {
               <CardHeader className="p-4 pb-2 flex flex-row items-center justify-between">
                 <div className="flex items-center space-x-2">
                   <Badge className="bg-yellow-500 text-black">{signal.rank}</Badge>
-                  <span className="text-gray-400">No Mint</span>
+                  {/* <span className="text-gray-400">No Mint</span> */}
                   <Badge variant="outline" className="border-gray-600 text-gray-300">
                     {signal.topPercentage}
                   </Badge>
@@ -363,13 +363,13 @@ export function AISignalsTab() {
                 </div>
               </CardHeader>
 
-              <CardContent className="p-4 pt-2">
+              <CardContent className="p-4 pt-1">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-3">
                     <TokenAvatar name={signal.name} size="md" />
                     <div>
-                      <div className="font-bold">{signal.name}</div>
-                      <div className="text-sm text-gray-400">In {signal.symbol}</div>
+                      {/* <div className="font-bold">{signal.name}</div> */}
+                      <div className="text-sm text-gray-400">{signal.symbol}</div>
                     </div>
                   </div>
                   <div className="text-right">
@@ -435,9 +435,9 @@ export function AISignalsTab() {
                     key={index}
                     variant="ghost"
                     className={`rounded-none py-2 ${index === 0 ? 'bg-pink-900/50' :
-                        index === 1 ? 'bg-pink-800/50' :
-                          index === 2 ? 'bg-pink-700/50' :
-                            'bg-pink-600/50'
+                      index === 1 ? 'bg-pink-800/50' :
+                        index === 2 ? 'bg-pink-700/50' :
+                          'bg-pink-600/50'
                       }`}
                   >
                     {percentage}

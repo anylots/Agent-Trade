@@ -1,3 +1,4 @@
 /target
 /dev
 .env
+/agent_trade_db
