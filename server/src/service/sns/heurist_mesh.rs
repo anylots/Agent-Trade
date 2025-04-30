@@ -2,7 +2,10 @@ use anyhow::Result;
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 
-use crate::utils::{HEURIST_API_KEY, HEURIST_MESH_URL};
+use crate::{
+    service::openrouter::preamble::prompt,
+    utils::{HEURIST_API_KEY, HEURIST_MESH_URL},
+};
 
 /// Response structure for Heurist API
 #[derive(Deserialize, Debug)]
@@ -23,6 +26,15 @@ struct HeuristRequestBody {
     agent_id: String,
     input: HeuristInput,
 }
+
+const EXCLUSION_LIST: &[&str] = &[
+    "BTC", "ETH", "USDT", "XRP", "BNB", "SOL", "USDC", "DOGE", "ADA", "TRX", "STETH", "WBTC",
+    "SUI", "LINK", "AVAX", "XLM", "LEO", "TON", "SHIB", "HBAR", "USDS", "WSTETH", "BCH", "LTC",
+    "DOT", "HYPE", "FDUSD", "TRUMP", "WSOL", "ALPACA", "PUNDIX", "SIGN", "PEPE", "WETH", "VIRTUA",
+    "INIT", "BONK", "LAYER", "USUAL", "WLD", "FARTCOIN", "USD1", "SUSDE", "POL", "ALGO", "ATOM",
+    "LBTC", "FET", "FTN", "FIL", "ENA", "TIA", "S", "ARB", "JLP", "SOLVBTC", "KCS", "JUP", "MKR",
+    "OP", "XDC", "STX", "NEXO", "BNSOL", "FLR", "QNT", "ZK", "STRK", "TAO", "DOG", "USD",
+];
 
 /// Call the Heurist Mesh API with the specified agent ID and query
 ///
@@ -79,6 +91,29 @@ pub fn call_heurist_mesh(agent_id: &str, query: &str) -> Result<String> {
     }
 }
 
+pub async fn get_popular_tokens() -> Result<Vec<String>> {
+    let msg = call_heurist_mesh(
+        "ElfaTwitterIntelligenceAgent",
+        r#"{  
+        "tool": "get_trending_tokens",  
+        "tool_arguments": {"time_window": "24h",},  
+        "query": "Get the 16 popular tokens for reference"  
+    }"#,
+    )?;
+    let converted_data = prompt(&format!("{}{}","Extract the Token symbol from the following information and put it into a array (You only give the final data results): ",msg), "qwen/qwen-2.5-72b-instruct").await?;
+    // Extract token symbols from the JSON string
+    let tokens: Vec<String> = converted_data
+        .trim_start_matches("```json\n")
+        .trim_end_matches("\n```")
+        .trim_start_matches('[')
+        .trim_end_matches(']')
+        .split(',')
+        .map(|s| s.trim().trim_matches('"').to_string().to_uppercase())
+        .filter(|token| !EXCLUSION_LIST.contains(&token.as_str()))
+        .collect();
+
+    Ok(tokens)
+}
 #[cfg(test)]
 mod tests {
     use super::HeuristResponse;
@@ -91,13 +126,16 @@ mod tests {
         // let response = call_heurist_mesh("TwitterInfoAgent", "What are BeckerC999's last 4 tweets?")?;
         // let response = call_heurist_mesh(
         //     "ElfaTwitterIntelligenceAgent",
-        //     r#"{  
-        //     "tool": "get_trending_tokens",  
-        //     "tool_arguments": {"time_window": "24h",},  
-        //     "query": "Get the 32 popular tokens on Solana for reference"  
-        // }"#
-        // ).unwrap();
-        let response = call_heurist_mesh("BitquerySolanaTokenInfoAgent", "get_top_trending_tokens")?;
+        //     r#"{
+        //     "tool": "get_trending_tokens",
+        //     "tool_arguments": {"time_window": "24h",},
+        //     "query": "Get the 16 popular tokens for reference"
+        // }"#,
+        // )
+        // .unwrap();
+        // let response = call_heurist_mesh("BitquerySolanaTokenInfoAgent", "get_top_trending_tokens")?;
+        // let response = call_heurist_mesh("BitquerySolanaTokenInfoAgent", "Top 20 crypto by market cap")?;
+        let response = call_heurist_mesh("BitquerySolanaTokenInfoAgent", "query_token_metrics for 4wZNdqQhxg74Gmmy6YmSJJ2qq4EAz9TUVyCNRGM8pump")?;
 
         println!("response: {:?}", response);
         // Verify response is not empty
@@ -116,5 +154,12 @@ mod tests {
 
         let response = result.unwrap();
         assert_eq!(response.response, "Test response");
+    }
+
+    #[tokio::test]
+    async fn test_get_popular_tokens() {
+        dotenv::dotenv().ok();
+        let tokens = get_popular_tokens().await.unwrap();
+        println!("tokens: {:?}", tokens);
     }
 }

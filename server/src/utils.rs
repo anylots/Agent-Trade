@@ -11,6 +11,12 @@ pub static HEURIST_MESH_URL: Lazy<String> =
 pub static HEURIST_API_KEY: Lazy<String> =
     Lazy::new(|| env::var("HEURIST_API_KEY").unwrap_or_default());
 
+pub static OPENROUTER_API: Lazy<String> =
+    Lazy::new(|| env::var("OPENROUTER_API").unwrap_or_default());
+
+pub static OPENROUTER_API_KEY: Lazy<String> =
+    Lazy::new(|| env::var("OPENROUTER_API_KEY").unwrap_or_default());
+
 /// Global static collection of LP wallet addresses
 pub static LP_WALLETS: Lazy<Vec<String>> = Lazy::new(|| read_lp_wallets_config("config.json"));
 /// Configuration structure for LP wallets

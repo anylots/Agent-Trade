@@ -1,4 +1,4 @@
-use crate::service::dex::raydium::{query_raydium_pools, PoolInfo};
+use crate::service::data::dex::raydium::{query_raydium_pools, PoolInfo};
 use anyhow::Result;
 use once_cell::sync::Lazy;
 use sled;
@@ -14,8 +14,6 @@ const INCLUSION_LIST: &[&str] = &["SOL", "WSOL", "USDC", "USDT"];
 
 pub static FILTERED_POOLS: Lazy<Arc<Mutex<Vec<PoolInfo>>>> =
     Lazy::new(|| Arc::new(Mutex::new(Vec::with_capacity(100))));
-
-
 
 /// Analyze Raydium pools by querying twice with 2s interval and filtering results
 pub fn analyze_pools() -> Result<Vec<PoolInfo>> {
@@ -143,39 +141,42 @@ pub fn start_pool_analysis_service() -> Result<()> {
 pub fn query_filtered_pools(page_num: usize, page_size: usize) -> Result<(Vec<PoolInfo>, usize)> {
     // Lock the FILTERED_POOLS for reading
     let mut filtered_pools = FILTERED_POOLS.lock().unwrap();
-    
+
     // If FILTERED_POOLS is empty, try to load from sled database
     if filtered_pools.is_empty() {
         // Open the sled database
         let db = sled::open("agent_trade_db")?;
-        
+
         // Load existing data from sled into FILTERED_POOLS if available
         if let Some(existing_data) = db.get("filtered_pools")? {
             if let Ok(pools) = serde_json::from_slice::<Vec<PoolInfo>>(&existing_data) {
                 *filtered_pools = pools;
-                println!("Loaded {} pools from database for query", filtered_pools.len());
+                println!(
+                    "Loaded {} pools from database for query",
+                    filtered_pools.len()
+                );
             }
         }
     }
-    
+
     // Calculate total count
     let total_count = filtered_pools.len();
-    
+
     // Apply pagination
     let start_index = (page_num - 1) * page_size;
     let end_index = std::cmp::min(start_index + page_size, total_count);
-    
+
     // Create a new Vec with the paginated results by serializing and deserializing each pool
     let mut paginated_pools = Vec::new();
     if start_index < total_count {
         // First, serialize the entire slice we need
         let slice = &filtered_pools[start_index..end_index];
         let json_string = serde_json::to_string(slice)?;
-        
+
         // Then deserialize it back to get a new Vec
         paginated_pools = serde_json::from_str(&json_string)?;
     }
-    
+
     Ok((paginated_pools, total_count))
 }
 
@@ -244,7 +245,7 @@ mod tests {
             Ok(_) => {
                 // Sleep briefly to let the service run and populate data
                 thread::sleep(Duration::from_secs(5));
-                
+
                 // Now test pagination with different page sizes
                 let test_cases = vec![
                     (1, 5),  // First page, 5 items per page
@@ -252,15 +253,18 @@ mod tests {
                     (1, 10), // First page, 10 items per page
                     (3, 3),  // Third page, 3 items per page
                 ];
-                
+
                 for (page_num, page_size) in test_cases {
                     match query_filtered_pools(page_num, page_size) {
                         Ok((pools, total_count)) => {
                             println!(
                                 "Page {}, Size {}: Got {} pools (total: {})",
-                                page_num, page_size, pools.len(), total_count
+                                page_num,
+                                page_size,
+                                pools.len(),
+                                total_count
                             );
-                            
+
                             // Verify the number of returned pools is correct
                             let expected_count = std::cmp::min(
                                 page_size,
@@ -268,16 +272,18 @@ mod tests {
                                     total_count - (page_num - 1) * page_size
                                 } else {
                                     0
-                                }
+                                },
                             );
-                            
+
                             assert_eq!(
                                 pools.len(),
                                 expected_count,
                                 "Expected {} pools for page {}, size {}",
-                                expected_count, page_num, page_size
+                                expected_count,
+                                page_num,
+                                page_size
                             );
-                            
+
                             // Print some details about the returned pools
                             for (i, pool) in pools.iter().enumerate() {
                                 println!(

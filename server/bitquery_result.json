@@ -1,0 +1,288 @@
+{
+  "data": {
+    "Solana": {
+      "DEXTrades": [
+        {
+          "Trade": {
+            "Buy": {
+              "Currency": {
+                "Decimals": 6,
+                "Fungible": true,
+                "MintAddress": "FwMa8v3ZnryhyR2Dt5YGfLBaHMGSCLsCuU8Gdccupump",
+                "Name": "SOLANA BEAR",
+                "Symbol": "TED",
+                "Uri": "https://ipfs.io/ipfs/QmQ4QRC7vci4iVjzZfuXmDMsFVdFPCmUhBav3NEmu6cNQx"
+              },
+              "Price": 7.081573274184451e-7,
+              "PriceInUSD": 0.0000999663976444002
+            },
+            "Market": {
+              "MarketAddress": "EpYEBg1LYK6R1LCwEHCcckGzv5ZoXjAzXJiHPg44fk7k"
+            }
+          },
+          "joinTokenSupplyUpdates": {
+            "Block": {
+              "Time": "2025-04-30T14:01:09Z"
+            },
+            "Transaction": {
+              "Dev": "8kZ4Q23mjYxiEWARTnnd7AgDE24f1CEcY8scktNJ4YS6",
+              "Signature": "3XDu446Zdy932w9oA9wGXJn7y5EAWi7tTPQ6nEbQZbxBU3vvhCQgzu537gHuYFDqXh3P91UYCCNBrsF57S4j7RgZ"
+            }
+          }
+        },
+        {
+          "Trade": {
+            "Buy": {
+              "Currency": {
+                "Decimals": 6,
+                "Fungible": true,
+                "MintAddress": "VGcjzbVLaK7SXPF6fgjvhxBKZ4yrsvHouXsoztspump",
+                "Name": "FIFA BLOCKCHAIN",
+                "Symbol": "FIFA",
+                "Uri": "https://ipfs.io/ipfs/QmWSfsX4Yi4XBsFJFkdKpwPM5qCaHAWJ1eq8ySY43hBeAL"
+              },
+              "Price": 7.073270322206744e-7,
+              "PriceInUSD": 0.00009984918976320074
+            },
+            "Market": {
+              "MarketAddress": "6btRiFyZ7PSbLqPcmW1aScnQiKtvG9wgwiiA5NqeSiAe"
+            }
+          },
+          "joinTokenSupplyUpdates": {
+            "Block": {
+              "Time": "2025-04-30T12:20:19Z"
+            },
+            "Transaction": {
+              "Dev": "3RK4ibLuagLjStoVSsFq6zL6saMGvnwG51LutaW8ekzS",
+              "Signature": "pwnQMQiUCcP4SPsEE3tbyhy1YFNDmLzZZbJVGeEyabCGTBtbLVGSRNknhmCJbv9B78QkkQLi6BLGUsFw6M9TmCA"
+            }
+          }
+        },
+        {
+          "Trade": {
+            "Buy": {
+              "Currency": {
+                "Decimals": 6,
+                "Fungible": true,
+                "MintAddress": "DeVtnsNrMwMM2XdNVVJtw1F3SGnetmrMmCgcxEBspump",
+                "Name": "The Real House",
+                "Symbol": "HOUSE",
+                "Uri": "https://ipfs.io/ipfs/QmSEcsH6GpxWg7H9JbyfQvwgewB1tysThhf7mVDeqPRPfF"
+              },
+              "Price": 7.071483473987047e-7,
+              "PriceInUSD": 0.00009984389542977984
+            },
+            "Market": {
+              "MarketAddress": "3YFhtWDtauSDECN5kqimLmbdoo2XPJqKuNRGMzr2R7zz"
+            }
+          },
+          "joinTokenSupplyUpdates": {
+            "Block": {
+              "Time": "2025-04-30T13:59:56Z"
+            },
+            "Transaction": {
+              "Dev": "GSfdpW7yZzgsXqLPv16q3uFeShyBq645ogUc4Y36Patx",
+              "Signature": "PeMmy6xdKQEAdbUaa1S7cnsh13XPa7BfELuSYJ2Jqa3Ln9odRYn5iYuKFKSBuJ3wtAA9TSQyNaRVixbShoMXku9"
+            }
+          }
+        },
+        {
+          "Trade": {
+            "Buy": {
+              "Currency": {
+                "Decimals": 6,
+                "Fungible": true,
+                "MintAddress": "FeBh3xKXBKSeXfzPqU7YNbWdzimuCTLRHMAzNXe6pump",
+                "Name": "Artome AI",
+                "Symbol": "ARTOME",
+                "Uri": "https://ipfs.io/ipfs/QmVF2XvRFomUz4CV8WqRhdjTF8tUVss8vRmAtKfo4Vr8ES"
+              },
+              "Price": 7.070117602377452e-7,
+              "PriceInUSD": 0.0000999520938651109
+            },
+            "Market": {
+              "MarketAddress": "HB6bXLyfeSaufrYA5KFbYFqgs64UdH1serftR6EhkTcx"
+            }
+          },
+          "joinTokenSupplyUpdates": {
+            "Block": {
+              "Time": "2025-04-30T12:49:25Z"
+            },
+            "Transaction": {
+              "Dev": "GyAhLdPF47rrb2cfUuxetLwT5YmAb2Bi4BVg58dpq6Dy",
+              "Signature": "38rrc6r6jtAq2WjCgKSgygpNEcc7guTstZAREeuikxYJ2MUXusG7ndt1iWa9Nvswwm1hnaz2rMWaTZmgo5uYnwXq"
+            }
+          }
+        },
+        {
+          "Trade": {
+            "Buy": {
+              "Currency": {
+                "Decimals": 6,
+                "Fungible": true,
+                "MintAddress": "6jiJ39V5wGbfvrvVzufZLTdnMCDUa4W64C5qZuW8pump",
+                "Name": "PokeTrench Cards",
+                "Symbol": "PTC",
+                "Uri": "https://ipfs.io/ipfs/QmccoTyc8kot4SPWSSLxuYPPvmad48ZVtQJMBwXtfUfTXn"
+              },
+              "Price": 7.068740109054882e-7,
+              "PriceInUSD": 0.0000997852394132123
+            },
+            "Market": {
+              "MarketAddress": "3Fh9jwYjUn7yQup5TMNR3mNH7tU8cyxEoCjFjNogBJUU"
+            }
+          },
+          "joinTokenSupplyUpdates": {
+            "Block": {
+              "Time": "2025-04-30T12:43:59Z"
+            },
+            "Transaction": {
+              "Dev": "ECqFXE7j913j8GtXdB8PbvcMpGmDKeDPRUYP46hmXUFD",
+              "Signature": "c1KmoSx3qjLnY174TEDC6M2DQNbQHhRPZZpufAps1kuwHgxoxX8e2LYX6XiQCM7ZupnGzFYVjMsQ6qrFogkbGqg"
+            }
+          }
+        },
+        {
+          "Trade": {
+            "Buy": {
+              "Currency": {
+                "Decimals": 6,
+                "Fungible": true,
+                "MintAddress": "GPoxM128cMRQxLUJ8wLtB1pxWymeB2Dgk9DoBno4pump",
+                "Name": "Buildercoin",
+                "Symbol": "Builder",
+                "Uri": "https://ipfs.io/ipfs/QmWmoT6KSWEQQA2Lgsr3woofRk5vPm3ri9JwgRFeEGUxWc"
+              },
+              "Price": 7.057696610618737e-7,
+              "PriceInUSD": 0.00009966601394557374
+            },
+            "Market": {
+              "MarketAddress": "427xEmD7sQLiCTCxrX6ZQUcjU145h7KZ16PYQna8xeHm"
+            }
+          },
+          "joinTokenSupplyUpdates": {
+            "Block": {
+              "Time": "2025-04-30T11:05:00Z"
+            },
+            "Transaction": {
+              "Dev": "DdZG8dw12CsHjj2Ytfo1vKNPPoU4DEYSMSxdhPjo5U6N",
+              "Signature": "5B9zrp7qZSwnwbSSRwRtyqxnLo68TErPw42SAGWRCubUbsCK1YL4PXjBdFvXy7QBsgJTWUK82P39ZQCXCFM86z6m"
+            }
+          }
+        },
+        {
+          "Trade": {
+            "Buy": {
+              "Currency": {
+                "Decimals": 6,
+                "Fungible": true,
+                "MintAddress": "7GEQHkAp9WFNfBiMD8Aznoy3Cp3Fdz9ef2kv12HBpump",
+                "Name": "The Truth Terminal",
+                "Symbol": "TTT",
+                "Uri": "https://ipfs.io/ipfs/QmWC834u6RDCNeXxH8fstxU7Pfb5q4Gi4n3UixE7nhT9xM"
+              },
+              "Price": 7.05488226807744e-7,
+              "PriceInUSD": 0.00009998591531956808
+            },
+            "Market": {
+              "MarketAddress": "555kFQn8yvCiBZ7pSrNPjxVc7b2uFQugrvLPTRAUuAKf"
+            }
+          },
+          "joinTokenSupplyUpdates": {
+            "Block": {
+              "Time": "2025-04-30T15:49:11Z"
+            },
+            "Transaction": {
+              "Dev": "BYzRoktUHesZD1u7aNRZ6NP1nMMD1CtRojCBUEhwz7o8",
+              "Signature": "4KxoV6ifieTfwQdfLRdTo39cmY2cCSuWH4JfLwCsdSi5zLL6F9Ay37epn363fZkUuDTywbeUSeEpwmVqJwZejYpe"
+            }
+          }
+        },
+        {
+          "Trade": {
+            "Buy": {
+              "Currency": {
+                "Decimals": 6,
+                "Fungible": true,
+                "MintAddress": "AwUZGdCrEFuyXXn1m7fDmkzhMGQKiuZmhMbVkgjyV3kf",
+                "Name": "JUSTICE FOR RAIN",
+                "Symbol": "RAIN",
+                "Uri": "https://ipfs.io/ipfs/QmQ3PLr52rQTMyXUD8impXoeTqVSmxs9yPMezTXXH6kLmZ"
+              },
+              "Price": 7.05288154955542e-7,
+              "PriceInUSD": 0.00009998081631030886
+            },
+            "Market": {
+              "MarketAddress": "E1tBESgmcqZRHaPZa21qxQouy8v2Rb3uJiy9fPUsHk7b"
+            }
+          },
+          "joinTokenSupplyUpdates": {
+            "Block": {
+              "Time": "2025-04-30T14:53:07Z"
+            },
+            "Transaction": {
+              "Dev": "C9KKsaYjMXS8SnR6TzhoMCVTdhEbEWLYm3MB2UctAfe9",
+              "Signature": "3i3g6LkByNVhiAR2KaQLkffMaNRAyuB3RSNf2fu1TytsBc1MT4cXE4rqP9BUHL6dsfbistPVy5REpvzJviLQrUGc"
+            }
+          }
+        },
+        {
+          "Trade": {
+            "Buy": {
+              "Currency": {
+                "Decimals": 6,
+                "Fungible": true,
+                "MintAddress": "AbyLBxVaYQSkW66RH7i6H33btoLobEfZ5DFhEZw2pump",
+                "Name": "SAVE RAIN ",
+                "Symbol": "RAIN ",
+                "Uri": "https://ipfs.io/ipfs/Qmb2g4pfWrUbYWJ9qKpi1UKtus8zPwXygfMsjAqWp8apth"
+              },
+              "Price": 7.052519499234644e-7,
+              "PriceInUSD": 0.00009997568392769869
+            },
+            "Market": {
+              "MarketAddress": "7M8aTpwgjkquhJozMsc6roW2AwjwwA8DMm32iPXPBhQe"
+            }
+          },
+          "joinTokenSupplyUpdates": {
+            "Block": {
+              "Time": "2025-04-30T14:56:03Z"
+            },
+            "Transaction": {
+              "Dev": "BHTAQNkvBJ5K7bEcY3DFTcSs8qx1oRWupKhDu9oyojcd",
+              "Signature": "4uRz9Xi2Xk88qb1VNsi16idd3xFsuypSmmNTgXmQhKitdtZ2AQB2JyPmsHcsvNEVCjkbFq2JUZ558hZfveJgnSar"
+            }
+          }
+        },
+        {
+          "Trade": {
+            "Buy": {
+              "Currency": {
+                "Decimals": 6,
+                "Fungible": true,
+                "MintAddress": "FKhREhtQi5B8hRFh1x4ChHaexouY8vMouGV2wugpump",
+                "Name": "Slomo",
+                "Symbol": "SLOMO",
+                "Uri": "https://ipfs.io/ipfs/QmXPPuJBB6LFSCBMJMtV1xpZ94iqYax9BsYK1HV29yEVtq"
+              },
+              "Price": 7.051273535598621e-7,
+              "PriceInUSD": 0.0000999573434527288
+            },
+            "Market": {
+              "MarketAddress": "DDyAct1W1q4CjWUALwwAh1LvwWNtvvTgaXiqgSNS2Nho"
+            }
+          },
+          "joinTokenSupplyUpdates": {
+            "Block": {
+              "Time": "2025-04-30T14:57:17Z"
+            },
+            "Transaction": {
+              "Dev": "6LXH5VLYSUii4CjbaLrmgtWy1SYWdfTUnmt42h836BfC",
+              "Signature": "54wWcFkdiuGAhzPnpPGe8mD5BU8Ugb7ZjjUXQ4V7GB7ADsSd4V4tePH57M1v22TeUevtHWU1Hwg17EtNikXpFycZ"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
