@@ -1,5 +1,7 @@
 use serde::{Deserialize, Serialize};  
-use anyhow::Result;  
+use anyhow::{Result, anyhow};  
+use log;
+use url::Url;
 
 // Structure definitions remain unchanged  
 #[derive(Debug, Serialize, Deserialize)]  
@@ -92,25 +94,36 @@ pub fn query_raydium_pools(
     sort_type: &str,  
     page_size: u32,  
 ) -> Result<RaydiumApiResponse> {  
-    println!("query_raydium_pools");  
+    log::debug!("Querying Raydium pools with parameters: pool_type={}, page_num={}, sort_field={}, sort_type={}, page_size={}",
+        pool_type, page_num, pool_sort_field, sort_type, page_size);  
 
-    // Build URL with query parameters  
-    let url = format!(  
-        "https://api-v3.raydium.io/pools/info/list?poolType={}&poolSortField={}&sortType={}&pageSize={}&page={}",  
-        pool_type, pool_sort_field, sort_type, page_size, page_num  
-    );  
+    // Build URL safely  
+    let mut url = url::Url::parse("https://api-v3.raydium.io/pools/info/list")?;  
+    url.query_pairs_mut()
+        .append_pair("poolType", pool_type)
+        .append_pair("poolSortField", pool_sort_field)
+        .append_pair("sortType", sort_type)
+        .append_pair("pageSize", &page_size.to_string())
+        .append_pair("page", &page_num.to_string());
 
-    let agent = ureq::AgentBuilder::new()  
-    .proxy(ureq::Proxy::new("http://192.168.31.172:7897")?)  
-    .build();   
+    let agent_builder = ureq::AgentBuilder::new();
+    let agent = if let Ok(proxy) = std::env::var("HTTP_PROXY") {
+        agent_builder
+            .proxy(ureq::Proxy::new(proxy)?)
+            .build()
+    } else {
+        agent_builder.build()
+    };
     
     // Send HTTP request  
-    let response = agent.get(&url)  
+    let response = agent.get(url.as_str())  
         .set("accept", "application/json")  
-        .call()?;  
+        .call()
+        .map_err(|e| anyhow::anyhow!("Raydium API request failed: {}", e))?;  
     
     // Parse response  
-    let raydium_response: RaydiumApiResponse = response.into_json()?;  
+    let raydium_response: RaydiumApiResponse = response.into_json()
+        .map_err(|e| anyhow::anyhow!("Failed to parse Raydium response: {}", e))?;  
     
     Ok(raydium_response)  
 }  
@@ -126,7 +139,7 @@ mod tests {
     // It's marked as ignored by default to avoid test failures in environments with limited connectivity
     #[tokio::test]
     async fn test_query_raydium_pools_live() {
-        println!("test_query_raydium_pools_live");
+        log::info!("Running live Raydium API test");
 
         // Test parameters
         let pool_type = "all";
@@ -265,20 +278,17 @@ mod tests {
         assert_eq!(pool.fee_rate, 0.0001);
         
         // Test a simple usage example
-        println!("Mock test successful!");
-        println!("Pool: {} ({}) - {} pair", pool.id, pool.pool_type, format!("{}/{}", pool.mint_a.symbol, pool.mint_b.symbol));
-        println!("Price: {}", pool.price);
-        println!("TVL: {}", pool.tvl);
-        println!("24h Volume: {}", pool.day.volume);
-        println!("24h APR: {}", pool.day.apr);
+        log::debug!("Mock test successful");
+        log::debug!("Pool: {} ({}) - {} pair", pool.id, pool.pool_type, format!("{}/{}", pool.mint_a.symbol, pool.mint_b.symbol));
+        log::debug!("Price: {}", pool.price);
+        log::debug!("TVL: {}", pool.tvl);
+        log::debug!("24h Volume: {}", pool.day.volume);
+        log::debug!("24h APR: {}", pool.day.apr);
     }
     
     // Simple example of how to use the query_raydium_pools function
     #[test]
     fn example_usage() {
-        println!("Example usage of query_raydium_pools function:");
-        println!("1. Call with parameters: pool_type, page_num, pool_sort_field, sort_type, page_size");
-        println!("2. Process the returned pools information");
-        println!("3. See test_raydium_response_parsing for a detailed example");
+    log::debug!("Example usage: Call query_raydium_pools() with parameters");
     }
 }
